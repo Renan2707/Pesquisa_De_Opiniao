@@ -4,11 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/mask@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="{% static 'css/main.min.css' %}">
     <title>Pesquisa de Satisfação</title>
 </head>
-<body>
-    <p class="bg-red-500">TESTEEEE</p>
+<body x-data="" class="bg-blue-200 py-10 md:py-16 lg:py-28">
+    <div class="w-11/12 lg:max-w-5xl rounded-xl mx-auto bg-white min-h-screen">
+        <div class="bg-blue-900 rounded-t-xl text-white">
+            <div class="mx-auto space-y-4 p-10 text-justify">
+                <h1 class="font-bold text-2xl md:text-4xl text-center">A MACROSUL QUER SABER A SUA OPINIÃO</h1>
+                <div class="space-y-4 mx-auto lg:w-10/12 text-sm md:text-base">
+                    <p>Com o intuito de aperfeiçoarmos os nossos serviços, solicitamos sua colaboração em responder a rápida pesquisa a seguir em menos de 5 minutos, o que nos permitirá identificar aspectos nos quais podemos melhorar.</p>
+
+                    <p>A pesquisa deve ser respondida preferencialmente pela pessoa que mais teve contato com a Macrosul. Assim, caso você não seja essa pessoa, solicitamos a gentileza de encaminhar o questionário para a pessoa adequada. Lembramos que as informações prestadas serão utilizadas somente para fins de melhoria de nossos processos.</p>
+
+                    <p>Favor responder até 30/09/23</p>
+
+                    <p>Qualquer dúvida entre em contato conosco através do e-mail: <a href="#">sgq@macrosul.com</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full px-10 py-2">
+            <form action="#" class="w-10/12 mx-auto space-y-4">
+                <p class="text-sm"><span class="text-red-600 text-base">*</span> Obrigatório</p>
+
+                <div>
+                    <label for="email" class="text-blue-950 font-semibold ml-2">1. Endereço de e-mail:</label>
+                    <span class="text-red-600 text-base">*</span>
+                    <input type="email" class="block w-full border-b-[#24449b85] border-[#afcdee69]" placeholder="exemplo@email.com">
+                </div>
+
+                <div>
+                    <label for="nome" class="text-blue-950 font-semibold ml-2">2. Razão Social/Nome Completo:</label>
+                    <span class="text-red-600 text-base">*</span>
+                    <input type="text" class="block w-full border-b-[#24449b85] border-[#afcdee69]" placeholder="Introduza sua resposta">
+                </div>
+
+                <div>
+                    <label for="cpf/cnpj" class="text-blue-950 font-semibold ml-2">3. CNPJ/CPF:</label>
+                    <span class="text-red-600 text-base">*</span>
+                    <input type="text" x-mask:dynamic="cpfCnpj" class="block w-full border-b-[#24449b85] border-[#afcdee69]" placeholder="999.999.999-99">
+                    
+                </div>
+
+                <div>
+                    <label for="telefone" class="text-blue-950 font-semibold ml-2">4. Telefone:</label>
+                    <span class="text-red-600 text-base">*</span>
+                    <input type="text" class="block w-full border-b-[#24449b85] border-[#afcdee69]" placeholder="(99) 99999-9999" x-mask:dynamic="telefoneCelular">
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+   
     
 </body>
 </html>
+
+<script>
+    function cpfCnpj(input) {
+        return input.length <=14
+            ? '999.999.999-99'
+            : '99.999.999/9999-99'
+    }
+
+    function telefoneCelular(input) {
+        return input.startsWith('9',5)
+            ?'(99) 99999-9999' 
+            :'(99) 9999-9999'
+    }
+    </script>
