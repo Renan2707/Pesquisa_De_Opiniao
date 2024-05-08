@@ -63,6 +63,40 @@
                     <input type="text" class="block w-full border-b-[#24449b85] border-[#afcdee69]" placeholder="(99) 99999-9999" x-mask:dynamic="telefoneCelular">
                 </div>
 
+
+                <!-- TESTE COM INPUT RANGE  -->
+                <!-- <div>
+                    <label for="teste" class="text-blue-950 font-semibold ml-2">X. Pergunta teste:</label>
+
+                    <div class="w-full flex justify-around text-gray-500 text-xs">
+                        <div class="flex items-center justify-center w-1/5">
+                            <img width="36" height="36" src="https://img.icons8.com/emoji/96/frowning-face.png" alt="frowning-face"/>
+                        </div>
+                        <div class="flex items-center justify-center w-1/5">
+                            <img width="36" height="36" src="https://img.icons8.com/emoji/96/pensive-face.png" alt="pensive-face"/>
+                        </div>
+                        <div class="flex items-center justify-center w-1/5">
+                            <img width="36" height="36" src="https://img.icons8.com/emoji/96/neutral-face.png" alt="neutral-face"/>
+                        </div>
+                        <div class="flex items-center justify-center w-1/5">
+                            <img width="36" height="36" src="https://img.icons8.com/emoji/96/slightly-smiling-face.png" alt="slightly-smiling-face"/>
+                        </div>
+                        <div class="flex items-center justify-center w-1/5">
+                            <img width="36" height="36" src="https://img.icons8.com/emoji/96/grinning-face-with-big-eyes--v2.png" alt="grinning-face-with-big-eyes--v2"/>
+                        </div>
+                    </div>
+                    <input type="range" name="teste" id="teste" class="block w-full">
+                    <div class="w-full flex items-center justify-around text-gray-500 text-xs">
+                        <p id="MuitoInsatisfeito" class="w-1/5 text-center">Muito Insatisfeito</p>
+                        <p id="Insatisfeito" class="w-1/5 text-center">Insatisfeito</p>
+                        <p id="Razoavel" class="w-1/5 text-center">Razoável</p>
+                        <p id="Satisfeito" class="w-1/5 text-center">Satisfeito</p>
+                        <p id="MuitoSatisfeito" class="w-1/5 text-center">Muito Satisfeito</p>
+                    </div>
+                </div> -->
+
+
+
                 <div>
                     <label for="" class="text-blue-950 font-semibold ml-2">5. Facilidade de contato com a empresa:</label>
                 
@@ -921,6 +955,52 @@
             ?'(99) 99999-9999' 
             :'(99) 9999-9999'
     }
+
+    // TESTE COM O INPUT RANGE 
+    // const inputTeste = document.querySelector('#teste')
+    // const MuitoSatisfeito = document.querySelector('#MuitoSatisfeito')
+    // const Satisfeito = document.querySelector('#Satisfeito')
+    // const Razoavel = document.querySelector('#Razoavel')
+    // const Insatisfeito = document.querySelector('#Insatisfeito')
+    // const MuitoInsatisfeito = document.querySelector('#MuitoInsatisfeito')
+    // inputTeste.addEventListener("input",(e)=>{
+    //     MuitoInsatisfeito.classList.remove('text-red-500');
+    //     Insatisfeito.classList.remove('text-orange-500');
+    //     Razoavel.classList.remove('text-yellow-500');
+    //     Satisfeito.classList.remove('text-green-800');
+    //     MuitoSatisfeito.classList.remove('text-green-800');
+
+    //     MuitoInsatisfeito.classList.remove('bg-red-100');
+    //     Insatisfeito.classList.remove('bg-orange-100');
+    //     Razoavel.classList.remove('bg-yellow-100');
+    //     Satisfeito.classList.remove('bg-green-100');
+    //     MuitoSatisfeito.classList.remove('bg-green-200');
+
+    //     if (inputTeste.value < 20){
+    //         MuitoInsatisfeito.classList.add('text-red-500')
+    //         MuitoInsatisfeito.classList.add('bg-red-100')
+    //     }
+    //     else if (inputTeste.value > 20 && inputTeste.value < 40){
+    //         Insatisfeito.classList.add('text-orange-500')
+    //         Insatisfeito.classList.add('bg-orange-100')
+
+    //     }
+    //     else if (inputTeste.value > 40 && inputTeste.value < 60){
+    //         Razoavel.classList.add('text-yellow-500')
+    //         Razoavel.classList.add('bg-yellow-100')
+
+    //     }
+    //     else if (inputTeste.value > 60 && inputTeste.value < 80){
+    //         Satisfeito.classList.add('text-green-800')
+    //         Satisfeito.classList.add('bg-green-100')
+
+    //     }
+    //     else if (inputTeste.value > 80){
+    //         MuitoSatisfeito.classList.add('text-green-800')
+    //         MuitoSatisfeito.classList.add('bg-green-200')
+
+    //     }
+    // })
 
 
     </script>
