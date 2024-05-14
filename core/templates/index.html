@@ -20,6 +20,19 @@
       color: white;
       border-color: #44add6;
     }
+
+    .emoji {
+    display: none;
+    }
+
+    input:checked + label .number {
+        display: none;
+    }
+
+    input:checked + label .emoji {
+        display: block;
+    }
+
   </style>
 
 <body x-data="data()" class="bg-blue-200 py-10 md:py-16 lg:py-28">
@@ -82,30 +95,38 @@
                     <div>
                         <label for="" class="text-blue-950 font-semibold ml-2">5. Facilidade de contato com a empresa:</label>
                     
-                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2">
+                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2 containerButtons">
                             <input type="radio" id="1-5" name="5" class="hidden">
-                            <label for="1-5" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                1
+                            <label for="1-5" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">1</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/frowning-face.png" alt="frowning-face"/>
+                                
                             </label>
                         
                             <input type="radio" id="2-5" name="5" class="hidden">
-                            <label for="2-5" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                2
+                            <label for="2-5" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">2</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/pensive-face.png" alt="pensive-face"/>
                             </label>
     
                             <input type="radio" id="3-5" name="5" class="hidden">
-                            <label for="3-5" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                3
+                            <label for="3-5" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">3</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/neutral-face.png" alt="neutral-face"/>
+
                             </label>
     
                             <input type="radio" id="4-5" name="5" class="hidden">
-                            <label for="4-5" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                4
+                            <label for="4-5" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">4</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/slightly-smiling-face.png" alt="slightly-smiling-face"/>
                             </label>
     
                             <input type="radio" id="5-5" name="5" class="hidden">
-                            <label for="5-5" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                5
+                            <label for="5-5" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">5</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/grinning-face-with-big-eyes--v2.png" alt="grinning-face-with-big-eyes--v2"/>
+
                             </label>
                         </div>
                         <div class="w-full flex justify-between text-xs font-semibold text-gray-500 px-2 lg:px-4">
@@ -118,30 +139,35 @@
                     <div>
                         <label for="" class="text-blue-950 font-semibold ml-2">6. Atendimento ao telefone:</label>
                     
-                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2">
+                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2 containerButtons">
                             <input type="radio" id="1-6" name="6" class="hidden">
-                            <label for="1-6" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                1
+                            <label for="1-6" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">1</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/frowning-face.png" alt="frowning-face"/>
                             </label>
                         
                             <input type="radio" id="2-6" name="6" class="hidden">
-                            <label for="2-6" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                2
+                            <label for="2-6" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">2</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/pensive-face.png" alt="pensive-face"/>
                             </label>
     
                             <input type="radio" id="3-6" name="6" class="hidden">
-                            <label for="3-6" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                3
+                            <label for="3-6" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">3</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/neutral-face.png" alt="neutral-face"/>
                             </label>
     
                             <input type="radio" id="4-6" name="6" class="hidden">
-                            <label for="4-6" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                4
+                            <label for="4-6" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">4</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/slightly-smiling-face.png" alt="slightly-smiling-face"/>
                             </label>
     
                             <input type="radio" id="5-6" name="6" class="hidden">
-                            <label for="5-6" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                5
+                            <label for="5-6" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">5</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/grinning-face-with-big-eyes--v2.png" alt="grinning-face-with-big-eyes--v2"/>
                             </label>
                         </div>
                         <div class="w-full flex justify-between text-xs font-semibold text-gray-500 px-2 lg:px-4">
@@ -154,30 +180,35 @@
                     <div>
                         <label for="" class="text-blue-950 font-semibold ml-2">7. Facilidade de comunicação pelos canais disponíveis:</label>
                     
-                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2">
+                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2 containerButtons">
                             <input type="radio" id="1-7" name="7" class="hidden">
-                            <label for="1-7" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                1
+                            <label for="1-7" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">1</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/frowning-face.png" alt="frowning-face"/>
                             </label>
                         
                             <input type="radio" id="2-7" name="7" class="hidden">
-                            <label for="2-7" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                2
+                            <label for="2-7" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">2</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/pensive-face.png" alt="pensive-face"/>
                             </label>
     
                             <input type="radio" id="3-7" name="7" class="hidden">
-                            <label for="3-7" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                3
+                            <label for="3-7" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">3</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/neutral-face.png" alt="neutral-face"/>
                             </label>
     
                             <input type="radio" id="4-7" name="7" class="hidden">
-                            <label for="4-7" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                4
+                            <label for="4-7" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">4</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/slightly-smiling-face.png" alt="slightly-smiling-face"/>
                             </label>
     
                             <input type="radio" id="5-7" name="7" class="hidden">
-                            <label for="5-7" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                5
+                            <label for="5-7" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">5</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/grinning-face-with-big-eyes--v2.png" alt="grinning-face-with-big-eyes--v2"/>
                             </label>
                         </div>
                         <div class="w-full flex justify-between text-xs font-semibold text-gray-500 px-2 lg:px-4">
@@ -190,30 +221,35 @@
                     <div>
                         <label for="" class="text-blue-950 font-semibold ml-2">8. Negociação comercial:</label>
                     
-                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2">
+                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2 containerButtons">
                             <input type="radio" id="1-8" name="8" class="hidden">
-                            <label for="1-8" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                1
+                            <label for="1-8" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">1</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/frowning-face.png" alt="frowning-face"/>
                             </label>
                         
                             <input type="radio" id="2-8" name="8" class="hidden">
-                            <label for="2-8" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                2
+                            <label for="2-8" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">2</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/pensive-face.png" alt="pensive-face"/>
                             </label>
     
                             <input type="radio" id="3-8" name="8" class="hidden">
-                            <label for="3-8" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                3
+                            <label for="3-8" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">3</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/neutral-face.png" alt="neutral-face"/>
                             </label>
     
                             <input type="radio" id="4-8" name="8" class="hidden">
-                            <label for="4-8" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                4
+                            <label for="4-8" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">4</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/slightly-smiling-face.png" alt="slightly-smiling-face"/>
                             </label>
     
                             <input type="radio" id="5-8" name="8" class="hidden">
-                            <label for="5-8" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                5
+                            <label for="5-8" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">5</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/grinning-face-with-big-eyes--v2.png" alt="grinning-face-with-big-eyes--v2"/>
                             </label>
                         </div>
                         <div class="w-full flex justify-between text-xs font-semibold text-gray-500 px-2 lg:px-4">
@@ -226,30 +262,35 @@
                     <div>
                         <label for="" class="text-blue-950 font-semibold ml-2">9. Informações sobre o produto no momento da compra:</label>
                     
-                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2">
+                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2 containerButtons">
                             <input type="radio" id="1-9" name="9" class="hidden">
-                            <label for="1-9" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                1
+                            <label for="1-9" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">1</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/frowning-face.png" alt="frowning-face"/>
                             </label>
                         
                             <input type="radio" id="2-9" name="9" class="hidden">
-                            <label for="2-9" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                2
+                            <label for="2-9" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">2</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/pensive-face.png" alt="pensive-face"/>
                             </label>
     
                             <input type="radio" id="3-9" name="9" class="hidden">
-                            <label for="3-9" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                3
+                            <label for="3-9" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">3</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/neutral-face.png" alt="neutral-face"/>
                             </label>
     
                             <input type="radio" id="4-9" name="9" class="hidden">
-                            <label for="4-9" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                4
+                            <label for="4-9" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">4</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/slightly-smiling-face.png" alt="slightly-smiling-face"/>
                             </label>
     
                             <input type="radio" id="5-9" name="9" class="hidden">
-                            <label for="5-9" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                5
+                            <label for="5-9" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">5</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/grinning-face-with-big-eyes--v2.png" alt="grinning-face-with-big-eyes--v2"/>
                             </label>
                         </div>
                         <div class="w-full flex justify-between text-xs font-semibold text-gray-500 px-2 lg:px-4">
@@ -269,30 +310,35 @@
                     <div>
                         <label for="" class="text-blue-950 font-semibold ml-2">10. Navegação pelo site <a href="https://macrosul.com/" target="_blank" class="text-blue-600 underline">(macrosul.com)</a>:</label>
                    
-                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2">
+                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2 containerButtons">
                             <input type="radio" id="1-10" name="10" class="hidden">
-                            <label for="1-10" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                1
+                            <label for="1-10" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">1</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/frowning-face.png" alt="frowning-face"/>
                             </label>
                         
                             <input type="radio" id="2-10" name="10" class="hidden">
-                            <label for="2-10" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                2
+                            <label for="2-10" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">2</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/pensive-face.png" alt="pensive-face"/>
                             </label>
     
                             <input type="radio" id="3-10" name="10" class="hidden">
-                            <label for="3-10" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                3
+                            <label for="3-10" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">3</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/neutral-face.png" alt="neutral-face"/>
                             </label>
     
                             <input type="radio" id="4-10" name="10" class="hidden">
-                            <label for="4-10" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                4
+                            <label for="4-10" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">4</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/slightly-smiling-face.png" alt="slightly-smiling-face"/>
                             </label>
     
                             <input type="radio" id="5-10" name="10" class="hidden">
-                            <label for="5-10" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                5
+                            <label for="5-10" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">5</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/grinning-face-with-big-eyes--v2.png" alt="grinning-face-with-big-eyes--v2"/>
                             </label>
                         </div>
                         <div class="w-full flex justify-between text-xs font-semibold text-gray-500 px-2 lg:px-4">
@@ -305,30 +351,35 @@
                     <div>
                         <label for="" class="text-blue-950 font-semibold ml-2">11. Preço dos produtos comparado aos demais disponíveis no mercado:</label>
                     
-                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2">
+                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2 containerButtons">
                             <input type="radio" id="1-11" name="11" class="hidden">
-                            <label for="1-11" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                1
+                            <label for="1-11" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">1</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/frowning-face.png" alt="frowning-face"/>
                             </label>
                         
                             <input type="radio" id="2-11" name="11" class="hidden">
-                            <label for="2-11" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                2
+                            <label for="2-11" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">2</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/pensive-face.png" alt="pensive-face"/>
                             </label>
     
                             <input type="radio" id="3-11" name="11" class="hidden">
-                            <label for="3-11" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                3
+                            <label for="3-11" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">3</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/neutral-face.png" alt="neutral-face"/>
                             </label>
     
                             <input type="radio" id="4-11" name="11" class="hidden">
-                            <label for="4-11" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                4
+                            <label for="4-11" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">4</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/slightly-smiling-face.png" alt="slightly-smiling-face"/>
                             </label>
     
                             <input type="radio" id="5-11" name="11" class="hidden">
-                            <label for="5-11" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                5
+                            <label for="5-11" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">5</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/grinning-face-with-big-eyes--v2.png" alt="grinning-face-with-big-eyes--v2"/>
                             </label>
                         </div>
                         <div class="w-full flex justify-between text-xs font-semibold text-gray-500 px-2 lg:px-4">
@@ -341,30 +392,35 @@
                     <div>
                         <label for="" class="text-blue-950 font-semibold ml-2">12. Condições de transporte:</label>
                     
-                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2">
+                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2 containerButtons">
                             <input type="radio" id="1-12" name="12" class="hidden">
-                            <label for="1-12" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                1
+                            <label for="1-12" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">1</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/frowning-face.png" alt="frowning-face"/>
                             </label>
                         
                             <input type="radio" id="2-12" name="12" class="hidden">
-                            <label for="2-12" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                2
+                            <label for="2-12" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">2</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/pensive-face.png" alt="pensive-face"/>
                             </label>
     
                             <input type="radio" id="3-12" name="12" class="hidden">
-                            <label for="3-12" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                3
+                            <label for="3-12" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">3</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/neutral-face.png" alt="neutral-face"/>
                             </label>
     
                             <input type="radio" id="4-12" name="12" class="hidden">
-                            <label for="4-12" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                4
+                            <label for="4-12" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">4</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/slightly-smiling-face.png" alt="slightly-smiling-face"/>
                             </label>
     
                             <input type="radio" id="5-12" name="12" class="hidden">
-                            <label for="5-12" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                5
+                            <label for="5-12" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">5</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/grinning-face-with-big-eyes--v2.png" alt="grinning-face-with-big-eyes--v2"/>
                             </label>
                         </div>
                         <div class="w-full flex justify-between text-xs font-semibold text-gray-500 px-2 lg:px-4">
@@ -377,30 +433,35 @@
                     <div>
                         <label for="" class="text-blue-950 font-semibold ml-2">13. Entrega no prazo estipulado:</label>
                     
-                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2">
+                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2 containerButtons">
                             <input type="radio" id="1-13" name="13" class="hidden">
-                            <label for="1-13" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                1
+                            <label for="1-13" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">1</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/frowning-face.png" alt="frowning-face"/>
                             </label>
                         
                             <input type="radio" id="2-13" name="13" class="hidden">
-                            <label for="2-13" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                2
+                            <label for="2-13" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">2</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/pensive-face.png" alt="pensive-face"/>
                             </label>
     
                             <input type="radio" id="3-13" name="13" class="hidden">
-                            <label for="3-13" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                3
+                            <label for="3-13" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">3</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/neutral-face.png" alt="neutral-face"/>
                             </label>
     
                             <input type="radio" id="4-13" name="13" class="hidden">
-                            <label for="4-13" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                4
+                            <label for="4-13" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">4</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/slightly-smiling-face.png" alt="slightly-smiling-face"/>
                             </label>
     
                             <input type="radio" id="5-13" name="13" class="hidden">
-                            <label for="5-13" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                5
+                            <label for="5-13" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">5</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/grinning-face-with-big-eyes--v2.png" alt="grinning-face-with-big-eyes--v2"/>
                             </label>
                         </div>
                         <div class="w-full flex justify-between text-xs font-semibold text-gray-500 px-2 lg:px-4">
@@ -413,30 +474,35 @@
                     <div>
                         <label for="" class="text-blue-950 font-semibold ml-2">14. Número de lote/número de série de acordo com o informado na Nota Fiscal:</label>
                     
-                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2">
+                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2 containerButtons">
                             <input type="radio" id="1-14" name="14" class="hidden">
-                            <label for="1-14" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                1
+                            <label for="1-14" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">1</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/frowning-face.png" alt="frowning-face"/>
                             </label>
                         
                             <input type="radio" id="2-14" name="14" class="hidden">
-                            <label for="2-14" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                2
+                            <label for="2-14" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">2</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/pensive-face.png" alt="pensive-face"/>
                             </label>
     
                             <input type="radio" id="3-14" name="14" class="hidden">
-                            <label for="3-14" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                3
+                            <label for="3-14" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">3</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/neutral-face.png" alt="neutral-face"/>
                             </label>
     
                             <input type="radio" id="4-14" name="14" class="hidden">
-                            <label for="4-14" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                4
+                            <label for="4-14" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">4</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/slightly-smiling-face.png" alt="slightly-smiling-face"/>
                             </label>
     
                             <input type="radio" id="5-14" name="14" class="hidden">
-                            <label for="5-14" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                5
+                            <label for="5-14" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">5</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/grinning-face-with-big-eyes--v2.png" alt="grinning-face-with-big-eyes--v2"/>
                             </label>
                         </div>
                         <div class="w-full flex justify-between text-xs font-semibold text-gray-500 px-2 lg:px-4">
@@ -455,30 +521,35 @@
                     <div>
                         <label for="" class="text-blue-950 font-semibold ml-2">15. Formas de pagamento:</label>
                     
-                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2">
+                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2 containerButtons">
                             <input type="radio" id="1-15" name="15" class="hidden">
-                            <label for="1-15" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                1
+                            <label for="1-15" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">1</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/frowning-face.png" alt="frowning-face"/>
                             </label>
                         
                             <input type="radio" id="2-15" name="15" class="hidden">
-                            <label for="2-15" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                2
+                            <label for="2-15" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">2</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/pensive-face.png" alt="pensive-face"/>
                             </label>
     
                             <input type="radio" id="3-15" name="15" class="hidden">
-                            <label for="3-15" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                3
+                            <label for="3-15" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">3</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/neutral-face.png" alt="neutral-face"/>
                             </label>
     
                             <input type="radio" id="4-15" name="15" class="hidden">
-                            <label for="4-15" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                4
+                            <label for="4-15" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">4</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/slightly-smiling-face.png" alt="slightly-smiling-face"/>
                             </label>
     
                             <input type="radio" id="5-15" name="15" class="hidden">
-                            <label for="5-15" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                5
+                            <label for="5-15" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">5</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/grinning-face-with-big-eyes--v2.png" alt="grinning-face-with-big-eyes--v2"/>
                             </label>
                         </div>
                         <div class="w-full flex justify-between text-xs font-semibold text-gray-500 px-2 lg:px-4">
@@ -491,30 +562,35 @@
                     <div>
                         <label for="" class="text-blue-950 font-semibold ml-2">16. Sistema de cobrança:</label>
                     
-                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2">
+                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2 containerButtons">
                             <input type="radio" id="1-16" name="16" class="hidden">
-                            <label for="1-16" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                1
+                            <label for="1-16" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">1</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/frowning-face.png" alt="frowning-face"/>
                             </label>
                         
                             <input type="radio" id="2-16" name="16" class="hidden">
-                            <label for="2-16" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                2
+                            <label for="2-16" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">2</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/pensive-face.png" alt="pensive-face"/>
                             </label>
     
                             <input type="radio" id="3-16" name="16" class="hidden">
-                            <label for="3-16" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                3
+                            <label for="3-16" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">3</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/neutral-face.png" alt="neutral-face"/>
                             </label>
     
                             <input type="radio" id="4-16" name="16" class="hidden">
-                            <label for="4-16" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                4
+                            <label for="4-16" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">4</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/slightly-smiling-face.png" alt="slightly-smiling-face"/>
                             </label>
     
                             <input type="radio" id="5-16" name="16" class="hidden">
-                            <label for="5-16" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                5
+                            <label for="5-16" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">5</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/grinning-face-with-big-eyes--v2.png" alt="grinning-face-with-big-eyes--v2"/>
                             </label>
                         </div>
                         <div class="w-full flex justify-between text-xs font-semibold text-gray-500 px-2 lg:px-4">
@@ -527,30 +603,35 @@
                     <div>
                         <label for="" class="text-blue-950 font-semibold ml-2">17. Pós vendas - Serviço de Atendimento ao Consumidor (SAC):</label>
                     
-                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2">
+                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2 containerButtons">
                             <input type="radio" id="1-17" name="17" class="hidden">
-                            <label for="1-17" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                1
+                            <label for="1-17" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">1</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/frowning-face.png" alt="frowning-face"/>
                             </label>
                         
                             <input type="radio" id="2-17" name="17" class="hidden">
-                            <label for="2-17" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                2
+                            <label for="2-17" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">2</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/pensive-face.png" alt="pensive-face"/>
                             </label>
     
                             <input type="radio" id="3-17" name="17" class="hidden">
-                            <label for="3-17" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                3
+                            <label for="3-17" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">3</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/neutral-face.png" alt="neutral-face"/>
                             </label>
     
                             <input type="radio" id="4-17" name="17" class="hidden">
-                            <label for="4-17" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                4
+                            <label for="4-17" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">4</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/slightly-smiling-face.png" alt="slightly-smiling-face"/>
                             </label>
     
                             <input type="radio" id="5-17" name="17" class="hidden">
-                            <label for="5-17" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                5
+                            <label for="5-17" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">5</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/grinning-face-with-big-eyes--v2.png" alt="grinning-face-with-big-eyes--v2"/>
                             </label>
                         </div>
                         <div class="w-full flex justify-between text-xs font-semibold text-gray-500 px-2 lg:px-4">
@@ -563,30 +644,35 @@
                     <div>
                         <label for="" class="text-blue-950 font-semibold ml-2">18. Pós vendas - Suporte Técnico (produtos em garantia):</label>
                     
-                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2">
+                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2 containerButtons">
                             <input type="radio" id="1-18" name="18" class="hidden">
-                            <label for="1-18" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                1
+                            <label for="1-18" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">1</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/frowning-face.png" alt="frowning-face"/>
                             </label>
                         
                             <input type="radio" id="2-18" name="18" class="hidden">
-                            <label for="2-18" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                2
+                            <label for="2-18" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">2</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/pensive-face.png" alt="pensive-face"/>
                             </label>
     
                             <input type="radio" id="3-18" name="18" class="hidden">
-                            <label for="3-18" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                3
+                            <label for="3-18" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">3</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/neutral-face.png" alt="neutral-face"/>
                             </label>
     
                             <input type="radio" id="4-18" name="18" class="hidden">
-                            <label for="4-18" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                4
+                            <label for="4-18" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">4</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/slightly-smiling-face.png" alt="slightly-smiling-face"/>
                             </label>
     
                             <input type="radio" id="5-18" name="18" class="hidden">
-                            <label for="5-18" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                5
+                            <label for="5-18" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">5</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/grinning-face-with-big-eyes--v2.png" alt="grinning-face-with-big-eyes--v2"/>
                             </label>
                         </div>
                         <div class="w-full flex justify-between text-xs font-semibold text-gray-500 px-2 lg:px-4">
@@ -599,30 +685,35 @@
                     <div>
                         <label for="" class="text-blue-950 font-semibold ml-2">19. Pós vendas - Assistências Técnicas:</label>
                     
-                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2">
+                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2 containerButtons">
                             <input type="radio" id="1-19" name="19" class="hidden">
-                            <label for="1-19" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                1
+                            <label for="1-19" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">1</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/frowning-face.png" alt="frowning-face"/>
                             </label>
                         
                             <input type="radio" id="2-19" name="19" class="hidden">
-                            <label for="2-19" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                2
+                            <label for="2-19" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">2</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/pensive-face.png" alt="pensive-face"/>
                             </label>
     
                             <input type="radio" id="3-19" name="19" class="hidden">
-                            <label for="3-19" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                3
+                            <label for="3-19" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">3</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/neutral-face.png" alt="neutral-face"/>
                             </label>
     
                             <input type="radio" id="4-19" name="19" class="hidden">
-                            <label for="4-19" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                4
+                            <label for="4-19" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">4</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/slightly-smiling-face.png" alt="slightly-smiling-face"/>
                             </label>
     
                             <input type="radio" id="5-19" name="19" class="hidden">
-                            <label for="5-19" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                5
+                            <label for="5-19" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">5</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/grinning-face-with-big-eyes--v2.png" alt="grinning-face-with-big-eyes--v2"/>
                             </label>
                         </div>
                         <div class="w-full flex justify-between text-xs font-semibold text-gray-500 px-2 lg:px-4">
@@ -643,30 +734,35 @@
                     <div>
                         <label for="" class="text-blue-950 font-semibold ml-2">20. Identificação e apresentação:</label>
                     
-                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2">
+                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2 containerButtons">
                             <input type="radio" id="1-20" name="20" class="hidden">
-                            <label for="1-20" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                1
+                            <label for="1-20" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">1</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/frowning-face.png" alt="frowning-face"/>
                             </label>
                         
                             <input type="radio" id="2-20" name="20" class="hidden">
-                            <label for="2-20" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                2
+                            <label for="2-20" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">2</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/pensive-face.png" alt="pensive-face"/>
                             </label>
     
                             <input type="radio" id="3-20" name="20" class="hidden">
-                            <label for="3-20" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                3
+                            <label for="3-20" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">3</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/neutral-face.png" alt="neutral-face"/>
                             </label>
     
                             <input type="radio" id="4-20" name="20" class="hidden">
-                            <label for="4-20" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                4
+                            <label for="4-20" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">4</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/slightly-smiling-face.png" alt="slightly-smiling-face"/>
                             </label>
     
                             <input type="radio" id="5-20" name="20" class="hidden">
-                            <label for="5-20" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                5
+                            <label for="5-20" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">5</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/grinning-face-with-big-eyes--v2.png" alt="grinning-face-with-big-eyes--v2"/>
                             </label>
                         </div>
                         <div class="w-full flex justify-between text-xs font-semibold text-gray-500 px-2 lg:px-4">
@@ -679,30 +775,35 @@
                     <div>
                         <label for="" class="text-blue-950 font-semibold ml-2">21. Embalagem, Manual de Instruções e Rótulos adequados:</label>
                     
-                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2">
+                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2 containerButtons">
                             <input type="radio" id="1-21" name="21" class="hidden">
-                            <label for="1-21" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                1
+                            <label for="1-21" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">1</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/frowning-face.png" alt="frowning-face"/>
                             </label>
                         
                             <input type="radio" id="2-21" name="21" class="hidden">
-                            <label for="2-21" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                2
+                            <label for="2-21" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">2</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/pensive-face.png" alt="pensive-face"/>
                             </label>
     
                             <input type="radio" id="3-21" name="21" class="hidden">
-                            <label for="3-21" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                3
+                            <label for="3-21" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">3</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/neutral-face.png" alt="neutral-face"/>
                             </label>
     
                             <input type="radio" id="4-21" name="21" class="hidden">
-                            <label for="4-21" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                4
+                            <label for="4-21" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">4</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/slightly-smiling-face.png" alt="slightly-smiling-face"/>
                             </label>
     
                             <input type="radio" id="5-21" name="21" class="hidden">
-                            <label for="5-21" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                5
+                            <label for="5-21" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">5</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/grinning-face-with-big-eyes--v2.png" alt="grinning-face-with-big-eyes--v2"/>
                             </label>
                         </div>
                         <div class="w-full flex justify-between text-xs font-semibold text-gray-500 px-2 lg:px-4">
@@ -715,30 +816,35 @@
                     <div>
                         <label for="" class="text-blue-950 font-semibold ml-2">22. Qualidade do produto:</label>
                     
-                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2">
+                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2 containerButtons">
                             <input type="radio" id="1-22" name="22" class="hidden">
-                            <label for="1-22" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                1
+                            <label for="1-22" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">1</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/frowning-face.png" alt="frowning-face"/>
                             </label>
                         
                             <input type="radio" id="2-22" name="22" class="hidden">
-                            <label for="2-22" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                2
+                            <label for="2-22" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">2</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/pensive-face.png" alt="pensive-face"/>
                             </label>
     
                             <input type="radio" id="3-22" name="22" class="hidden">
-                            <label for="3-22" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                3
+                            <label for="3-22" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">3</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/neutral-face.png" alt="neutral-face"/>
                             </label>
     
                             <input type="radio" id="4-22" name="22" class="hidden">
-                            <label for="4-22" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                4
+                            <label for="4-22" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">4</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/slightly-smiling-face.png" alt="slightly-smiling-face"/>
                             </label>
     
                             <input type="radio" id="5-22" name="22" class="hidden">
-                            <label for="5-22" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                5
+                            <label for="5-22" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">5</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/grinning-face-with-big-eyes--v2.png" alt="grinning-face-with-big-eyes--v2"/>
                             </label>
                         </div>
                         <div class="w-full flex justify-between text-xs font-semibold text-gray-500 px-2 lg:px-4">
@@ -751,30 +857,35 @@
                     <div>
                         <label for="" class="text-blue-950 font-semibold ml-2">23. Desempenho e Eficácia:</label>
                     
-                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2">
+                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2 containerButtons">
                             <input type="radio" id="1-23" name="23" class="hidden">
-                            <label for="1-23" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                1
+                            <label for="1-23" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">1</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/frowning-face.png" alt="frowning-face"/>
                             </label>
                         
                             <input type="radio" id="2-23" name="23" class="hidden">
-                            <label for="2-23" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                2
+                            <label for="2-23" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">2</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/pensive-face.png" alt="pensive-face"/>
                             </label>
     
                             <input type="radio" id="3-23" name="23" class="hidden">
-                            <label for="3-23" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                3
+                            <label for="3-23" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">3</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/neutral-face.png" alt="neutral-face"/>
                             </label>
     
                             <input type="radio" id="4-23" name="23" class="hidden">
-                            <label for="4-23" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                4
+                            <label for="4-23" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">4</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/slightly-smiling-face.png" alt="slightly-smiling-face"/>
                             </label>
     
                             <input type="radio" id="5-23" name="23" class="hidden">
-                            <label for="5-23" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                5
+                            <label for="5-23" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">5</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/grinning-face-with-big-eyes--v2.png" alt="grinning-face-with-big-eyes--v2"/>
                             </label>
                         </div>
                         <div class="w-full flex justify-between text-xs font-semibold text-gray-500 px-2 lg:px-4">
@@ -787,30 +898,35 @@
                     <div>
                         <label for="" class="text-blue-950 font-semibold ml-2">24. Especificações Técnicas:</label>
                     
-                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2">
+                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2 containerButtons">
                             <input type="radio" id="1-24" name="24" class="hidden">
-                            <label for="1-24" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                1
+                            <label for="1-24" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">1</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/frowning-face.png" alt="frowning-face"/>
                             </label>
                         
                             <input type="radio" id="2-24" name="24" class="hidden">
-                            <label for="2-24" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                2
+                            <label for="2-24" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">2</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/pensive-face.png" alt="pensive-face"/>
                             </label>
     
                             <input type="radio" id="3-24" name="24" class="hidden">
-                            <label for="3-24" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                3
+                            <label for="3-24" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">3</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/neutral-face.png" alt="neutral-face"/>
                             </label>
     
                             <input type="radio" id="4-24" name="24" class="hidden">
-                            <label for="4-24" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                4
+                            <label for="4-24" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">4</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/slightly-smiling-face.png" alt="slightly-smiling-face"/>
                             </label>
     
                             <input type="radio" id="5-24" name="24" class="hidden">
-                            <label for="5-24" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                5
+                            <label for="5-24" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">5</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/grinning-face-with-big-eyes--v2.png" alt="grinning-face-with-big-eyes--v2"/>
                             </label>
                         </div>
                         <div class="w-full flex justify-between text-xs font-semibold text-gray-500 px-2 lg:px-4">
@@ -823,30 +939,35 @@
                     <div>
                         <label for="" class="text-blue-950 font-semibold ml-2">25. Atendimento do produto às necessidades de acordo com a finalidade pretendida de uso:</label>
                     
-                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2">
+                        <div class="w-full flex lg:space-x-4 lg:pr-4 space-x-2 pr-2 containerButtons">
                             <input type="radio" id="1-25" name="25" class="hidden">
-                            <label for="1-25" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                1
+                            <label for="1-25" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">1</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/frowning-face.png" alt="frowning-face"/>
                             </label>
                         
                             <input type="radio" id="2-25" name="25" class="hidden">
-                            <label for="2-25" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                2
+                            <label for="2-25" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">2</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/pensive-face.png" alt="pensive-face"/>
                             </label>
     
                             <input type="radio" id="3-25" name="25" class="hidden">
-                            <label for="3-25" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                3
+                            <label for="3-25" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">3</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/neutral-face.png" alt="neutral-face"/>
                             </label>
     
                             <input type="radio" id="4-25" name="25" class="hidden">
-                            <label for="4-25" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                4
+                            <label for="4-25" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">4</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/slightly-smiling-face.png" alt="slightly-smiling-face"/>
                             </label>
     
                             <input type="radio" id="5-25" name="25" class="hidden">
-                            <label for="5-25" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300">
-                                5
+                            <label for="5-25" class="w-1/5 border border-[#1c7eda5b] rounded-lg px-3 py-2 text-center cursor-pointer transition duration-300 flex items-center justify-center">
+                                <p class="number">5</p>
+                                <img class="emoji" width="28" height="28" src="https://img.icons8.com/emoji/96/grinning-face-with-big-eyes--v2.png" alt="grinning-face-with-big-eyes--v2"/>
                             </label>
                         </div>
                         <div class="w-full flex justify-between text-xs font-semibold text-gray-500 px-2 lg:px-4">
