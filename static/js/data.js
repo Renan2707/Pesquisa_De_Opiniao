@@ -1,5 +1,4 @@
 const data = () => ({
-
     step: '',
     page: 0,
 
@@ -23,11 +22,7 @@ const data = () => ({
             case 6: this.step = 'step6'; break
             case 7: this.step = 'step7'; break
         }
-
-       
-    }
-    
-    
+    } 
 })
 
 
